@@ -2,10 +2,9 @@
 
 # Roguelike Game Documentation
 
--- Алгоритм генерации комнат
+## Алгоритм генерации комнат
 В каждой комнате рандомно выставляются объекты: 
-стены (BP_Walls) 10 штук 
-ловушки 10 штук
+стены (BP_Walls) и ловушки (BP_Traps)
 
 При переходе из одной комнаты в другую актор респавнится на начальную позицию, а объекты заново генерируются.
 
@@ -17,14 +16,12 @@
 
 В сложной комнате скорость ловушек в два раза больше, чем в обычной.
 
--- Дополнения
-–
+## Дополнения
+1. Типы объектов выставляются через enums
+2. DataTable для инициализации GameState параметров
 
--- Ссылки на готовые проекты
+## Ссылки на готовые проекты
 
-Respawning a Player Character | Unreal Engine 4.27 Documentation – respawn actor
-Адаптированные части кода с курса:
-HUD 
-Адаптированные части Simple Game HW:
-Взаимодействие с объектами
-https://www.youtube.com/watch?v=z_dCa-xSDiQ&t=237s – using enums in construct scripts.
+1. Respawning a Player Character | Unreal Engine 4.27 Documentation – respawn actor
+2. Адаптированные части из Simple Game HW -- взаимодействие с бонусами.
+3. https://www.youtube.com/watch?v=z_dCa-xSDiQ&t=237s – using enums in construct scripts.
